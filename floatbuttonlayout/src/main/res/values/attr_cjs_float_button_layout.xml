@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--自定义悬浮按钮布局-->
+    <declare-styleable name="FloatButtonLayout">
+        <!--按钮的吸屏方向-->
+        <attr name="suck_screen_direction">
+            <!--屏幕左边吸屏-->
+            <flag name="start" value="0x00001"/>
+            <!--屏幕右边吸屏-->
+            <flag name="end" value="0x00010"/>
+            <!--屏幕顶部吸屏-->
+            <flag name="top" value="0x00100"/>
+            <!--屏幕底部吸屏-->
+            <flag name="bottom" value="0x01000"/>
+            <!--不吸屏(默认值)-->
+            <flag name="none" value="0"/>
+            <!--全方向吸屏-->
+            <flag name="all" value="0x10000"/>
+        </attr>
+        <!--是否允许按钮滑动到屏幕外-->
+        <attr name="isAllowMoveBeyondScreen" format="boolean"/>
+        <!--用于判定是滑动还是点击的偏移量-->
+        <attr name="offsetToClick" format="dimension"/>
+    </declare-styleable>
+</resources>

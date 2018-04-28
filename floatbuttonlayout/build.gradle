@@ -1,0 +1,41 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+android {
+    compileSdkVersion 26
+
+
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+}
+
+publish {
+    repoName='CJS-Android-Widget_Library'//此处是坑，这个是你建立BintaryRespository的库名，如果你没有设置这个值，默认就是maven
+    userOrg = 'chenjunsen'//bintray.com用户名
+    groupId = 'cjs.android.widgets'//jcenter上的路径
+    artifactId = 'Android-FloatButtonLayout'//项目名称
+    publishVersion = '1.0.0'//版本号
+    desc = 'A convenient tool to help building a float button.Support full screen mode and Samsung S-series mobile phones change visiblity of bottom navigation bar dynamic.'//描述，不重要
+    website = 'https://github.com/ChenJunsen'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
+}
