@@ -3,8 +3,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorAccent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="bottom|right"
+    android:layout_marginBottom="100dp"
     android:orientation="vertical">
 
     <com.cjs.widget.floatbuttonlayout.FloatButton
@@ -13,6 +16,8 @@
         android:layout_height="wrap_content"
         android:src="@mipmap/ic_launcher"
         app:allow_stick_animation="true"
-        app:stick_direction="top|bottom"/>
+        app:stick_direction="top|bottom"
+        android:layout_marginBottom="100dp"
+        app:allow_first_original_position_to_stick="true"/>
 
 </LinearLayout>

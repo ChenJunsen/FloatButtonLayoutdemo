@@ -24,5 +24,7 @@
         <attr name="enable_stick_screen" format="boolean"/>
         <attr name="allow_move_beyond_parent_layout" format="boolean"/>
         <attr name="min_drag_offset" format="dimension"/>
+        <attr name="allow_first_original_position_to_stick" format="boolean"/>
+        <attr name="stick_animation_duration" format="integer"/>
     </declare-styleable>
 </resources>
