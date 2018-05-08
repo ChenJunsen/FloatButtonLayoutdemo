@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FloatButton">
+        <attr name="stick_direction">
+            <flag name="top" value="0x000001"/>
+            <flag name="bottom" value="0x000010"/>
+            <flag name="start" value="0x000100"/>
+            <flag name="end" value="0x001000"/>
+            <flag name="center_vertical" value="0x010000"/>
+            <flag name="center_horizontal" value="0x100000"/>
+
+            <!--<flag name="center_end" value="7"/>
+            <flag name="center_start" value="8"/>
+            <flag name="center_top" value="9"/>
+            <flag name="center_bottom" value="10"/>
+            <flag name="center_in_parent" value="11"/>
+
+            <flag name="top_start" value="12"/>
+            <flag name="top_end" value="13"/>
+            <flag name="bottom_start" value="14"/>
+            <flag name="bottom_end" value="15"/>-->
+        </attr>
+        <attr name="allow_stick_animation" format="boolean"/>
+        <attr name="enable_stick_screen" format="boolean"/>
+        <attr name="allow_move_beyond_parent_layout" format="boolean"/>
+        <attr name="min_drag_offset" format="dimension"/>
+    </declare-styleable>
+</resources>

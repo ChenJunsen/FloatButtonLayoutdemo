@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
+apply plugin: 'com.novoda.bintray-release'//应用bintray插件
 
 android {
     compileSdkVersion 26
@@ -32,10 +32,12 @@ dependencies {
 
 publish {
     repoName='CJS-Android-Widget_Library'//此处是坑，这个是你建立BintaryRespository的库名，如果你没有设置这个值，默认就是maven
-    userOrg = 'chenjunsen'//bintray.com用户名
+    userOrg = 'chenjunsen'//你注册bintray.com的用户名
     groupId = 'cjs.android.widgets'//jcenter上的路径
     artifactId = 'Android-FloatButtonLayout'//项目名称
-    publishVersion = '1.0.0'//版本号
-    desc = 'A convenient tool to help building a float button.Support full screen mode and Samsung S-series mobile phones change visiblity of bottom navigation bar dynamic.'//描述，不重要
-    website = 'https://github.com/ChenJunsen'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
+    publishVersion = '2.0.0'//版本号
+    desc = 'A convenient tool to help building a float button.Support ' +
+            'full screen mode and Samsung S-series mobile phones ' +
+            'change visiblity of bottom navigation bar dynamic.Now the new 2.0 version,adding a single button widget FloatButton.' //描述，不重要
+    website = 'https://github.com/ChenJunsen'//网站，不重要
 }

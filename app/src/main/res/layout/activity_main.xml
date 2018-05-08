@@ -10,7 +10,8 @@
     <com.cjs.widget.floatbuttonlayout.FloatButtonLayout
         android:id="@+id/fbl"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         tools:context="com.cjs.widget.floatbuttonlayoutdemo.MainActivity">
 
         <TextView
@@ -26,6 +27,13 @@
             android:layout_height="wrap_content"
             android:src="@mipmap/ic_launcher"/>
 
+
+
     </com.cjs.widget.floatbuttonlayout.FloatButtonLayout>
+    <Button
+        android:id="@+id/another"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看另一个实例"/>
 </LinearLayout>
 
