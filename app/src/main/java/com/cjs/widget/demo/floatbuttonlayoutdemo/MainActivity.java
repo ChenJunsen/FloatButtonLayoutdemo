@@ -23,7 +23,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_float_button_layout);
         mFloatButtonLayout=findViewById(R.id.fbl);
         mFloatButtonLayout.setSuckScreenDirection(FloatButtonLayout.SuckScreenDirection.ALL);
         mFloatButtonLayout.setAllowMoveBeyondScreen(false);
@@ -85,7 +85,7 @@ public class MainActivity extends Activity {
             }
         });
 
-        findViewById(R.id.another).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.float_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i=new Intent(MainActivity.this,Main2Activity.class);
